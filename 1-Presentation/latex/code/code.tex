@@ -1,0 +1,103 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+
+\documentclass[a4paper, french, twoside]{article}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={Common, TeX}}
+\usepackage[pdfusetitle, colorlinks=true]{hyperref}
+\usepackage{mathtools, amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{charcoal}{rgb}{0.21, 0.27, 0.31}
+\definecolor{ube}{rgb}{0.53, 0.47, 0.76}
+\definecolor{violet}{rgb}{0.2, 0.2, 0.6}
+\definecolor{blue(ncs)}{rgb}{0.0, 0.53, 0.74}
+\definecolor{amber}{rgb}{1.0, 0.49, 0.0}
+\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
+
+\usepackage[procnames]{listings}
+\lstset{language=Python ,
+mathescape=true,
+frame=trBL,
+numbers=none,
+lineskip=0.01mm,
+backgroundcolor=\color{white},
+basicstyle=\scriptsize,
+keywordstyle=\color{blue(ncs)},
+commentstyle=\color{amber},
+stringstyle=\color{ao},
+identifierstyle=\color{black},
+breaklines=true,
+inputpath={C:/Users/Adrien Dubois/Desktop/TIPE/2-Code/}}
+	
+\title{TIPE : Code}
+\author{Adrien Dubois - N°candidat : 51771}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Lecture PDB et génération des exemples}
+
+\subsection{Extraction du fichier PDB}
+\lstinputlisting[lastline=79]{extract_PDB.py}
+\subsection{Génerer les branches}
+\lstinputlisting{generer_nuage.py}
+\subsection{Modifier les protéines}
+\lstinputlisting{generer_protein.py}
+\subsection{Arbre couvrant}
+\lstinputlisting{arbre_couvrant.py}
+\subsection{Générer les graphes}
+\lstinputlisting{creer_graph.py}
+\subsection{Exemples protéines}
+\lstinputlisting[firstline=83]{extract_PDB.py}
+
+\section{Définition des classes}
+
+\subsection{Branches}
+\lstinputlisting[firstline=1,lastline=124]{cas_simple_nuage.py}
+\subsection{Graphes}
+\lstinputlisting[firstline=1,lastline=37]{graphisomorphism.py}
+\subsection{Protéines}
+\lstinputlisting[firstline=1,lastline=87]{def_protein.py}
+
+\section{Isomorphisme et sous-isomorphisme}
+
+\subsection{Isomorphsime sur les graphes}
+\lstinputlisting[firstline=39]{graphisomorphism.py}
+\subsection{Isomorphsime sur les protéines}
+\lstinputlisting[firstline=88]{def_protein.py}
+\subsection{Sous-isomorphisme sur les protéines}
+\lstinputlisting[firstline=14,lastline=68]{subisom_prot.py}
+\subsection{Informations et temps d'exécution}
+\lstinputlisting{isom_prot.py}
+\lstinputlisting[firstline=68,lastline=73]{subisom_prot.py}
+
+\section{Fonctions auxiliaires}
+\lstinputlisting{geometrie_et_aux.py}
+
+\section{Calcul des coefficients}
+\lstinputlisting[firstline=126,lastline=154]{cas_simple_nuage.py}
+\lstinputlisting[firstline=91]{subisom_prot.py}
+
+\section{Affichage}
+\subsection{Graphique complexité}
+\lstinputlisting{plot_graph_complexite_isom_brutes.py}
+\subsection{Affichage branches}
+\lstinputlisting{plot_distlines.py}
+\subsection{Affichage protéines}
+\lstinputlisting{plot_protein.py}
+\subsection{Affichage comparaison protéines}
+\lstinputlisting{plot_sub.py}
+
+\end{document}

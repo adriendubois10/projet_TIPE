@@ -1,0 +1,46 @@
+\selectlanguage *{french}
+\beamer@sectionintoc {1}{Contexte, données à traiter et objectif}{3}{1}{1}
+\beamer@sectionintoc {2}{Comparaison de branches sans ramifications}{4}{1}{2}
+\beamer@subsectionintoc {2}{1}{Notion de branche}{5}{1}{2}
+\beamer@subsectionintoc {2}{2}{Comparaison}{6}{1}{2}
+\beamer@subsectionintoc {2}{3}{Coefficient}{8}{1}{2}
+\beamer@sectionintoc {3}{Isomorphismes entre protéines}{11}{1}{3}
+\beamer@subsectionintoc {3}{1}{Définition}{11}{1}{3}
+\beamer@subsectionintoc {3}{2}{Force brute / tri des sommets}{14}{1}{3}
+\beamer@subsectionintoc {3}{3}{Comparaion}{20}{1}{3}
+\beamer@sectionintoc {4}{Isomorphisme cannonique de McKay}{22}{1}{4}
+\beamer@subsectionintoc {4}{1}{Tri par propagation du degré}{23}{1}{4}
+\beamer@subsectionintoc {4}{2}{Isomorphe cannonique}{25}{1}{4}
+\beamer@subsectionintoc {4}{3}{Application}{26}{1}{4}
+\beamer@sectionintoc {5}{Comparaion de protéines}{27}{1}{5}
+\beamer@subsectionintoc {5}{1}{Structure}{27}{1}{5}
+\beamer@subsectionintoc {5}{2}{Position}{29}{1}{5}
+\beamer@subsectionintoc {5}{3}{Comparaison}{30}{1}{5}
+\beamer@sectionintoc {6}{Conclusion}{31}{1}{6}
+\beamer@sectionintoc {7}{Annexe}{32}{1}{7}
+\beamer@sectionintoc {8}{Annexe Mckay}{33}{2}{8}
+\beamer@subsectionintoc {8}{1}{Arbre de recherche}{33}{2}{8}
+\beamer@subsectionintoc {8}{2}{Isomorphisme cannonique}{35}{2}{8}
+\beamer@sectionintoc {9}{Lecture PDB et génération des exemples}{36}{2}{9}
+\beamer@subsectionintoc {9}{1}{Extraction du fichier PDB}{36}{2}{9}
+\beamer@subsectionintoc {9}{2}{Génerer les branches}{36}{2}{9}
+\beamer@subsectionintoc {9}{3}{Modifier les protéines}{36}{2}{9}
+\beamer@subsectionintoc {9}{4}{Arbre couvrant}{36}{2}{9}
+\beamer@subsectionintoc {9}{5}{Générer les graphes}{36}{2}{9}
+\beamer@subsectionintoc {9}{6}{Exemples protéines}{36}{2}{9}
+\beamer@sectionintoc {10}{Définition des classes}{62}{2}{10}
+\beamer@subsectionintoc {10}{1}{Branches}{62}{2}{10}
+\beamer@subsectionintoc {10}{2}{Graphes}{62}{2}{10}
+\beamer@subsectionintoc {10}{3}{Protéines}{62}{2}{10}
+\beamer@sectionintoc {11}{Isomorphisme et sous-isomorphisme}{72}{2}{11}
+\beamer@subsectionintoc {11}{1}{Isomorphsime sur les graphes}{72}{2}{11}
+\beamer@subsectionintoc {11}{2}{Isomorphsime sur les protéines}{72}{2}{11}
+\beamer@subsectionintoc {11}{3}{Sous-isomorphisme sur les protéines}{72}{2}{11}
+\beamer@subsectionintoc {11}{4}{Informations et temps d'exécution}{72}{2}{11}
+\beamer@sectionintoc {12}{Fonctions auxiliaires}{89}{2}{12}
+\beamer@sectionintoc {13}{Calcul des coefficients}{99}{2}{13}
+\beamer@sectionintoc {14}{Affichage}{102}{2}{14}
+\beamer@subsectionintoc {14}{1}{Graphique complexité}{102}{2}{14}
+\beamer@subsectionintoc {14}{2}{Affichage branches}{102}{2}{14}
+\beamer@subsectionintoc {14}{3}{Affichage protéines}{102}{2}{14}
+\beamer@subsectionintoc {14}{4}{Affichage comparaison protéines}{102}{2}{14}

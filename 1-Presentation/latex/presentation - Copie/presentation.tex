@@ -1,0 +1,122 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+
+\input{imports.tex}
+
+\usetheme{Marburg}
+\title{Comparaison de protéines}
+\author{Adrien Dubois - N°candidat : 51771}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Plan}
+\vspace*{1.21cm}
+\tableofcontents
+\end{frame}
+
+\input{intro.tex}
+
+\input{branches.tex}
+
+\begin{frame}{Des branches à la protéine complète}
+    \normalsize
+    \begin{figure}[!htb]
+        \centering
+        \includegraphics[width=10cm]{branche_to_prot}
+    \end{figure}
+\end{frame}
+
+\input{isom.tex}
+
+\input{mckay.tex}
+
+\input{subisom.tex}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \underline{Bilan} :
+    \begin{itemize}
+        \item tri des atomes très classant
+        \item test d'isomorphisme efficace sur les protéines
+        \item méthode recherche du plus grand sous-graphe isomorphe fonctionnelle 
+        \item mise en place d'un coefficient de comparaison
+    \end{itemize}
+    \underline{Limites} : 
+    \begin{itemize}
+        \item lecture partielle du format pdb
+        \item coefficients déterminés de manière empirique
+        \newline $\quad \rightarrow \quad$sur une base d'exemples, ajuster les valeurs
+        \item recherche demande beaucoup de ressources (NP-complet)
+    \end{itemize}
+\end{frame}
+
+\section{Code}
+\begin{frame}[noframenumbering]{Code}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\end{frame}
+
+\begin{frame}[allowframebreaks,noframenumbering]
+    \section{Lecture PDB et génération des exemples}
+    \subsection{Extraction du fichier PDB}
+    \lstinputlisting[lastline=79]{extract_PDB.py}
+    \subsection{Génerer les branches}
+    \lstinputlisting{generer_nuage.py}
+    \subsection{Modifier les protéines}
+    \lstinputlisting{generer_protein.py}
+    \subsection{Arbre couvrant}
+    \lstinputlisting{arbre_couvrant.py}
+    \subsection{Générer les graphes}
+    \lstinputlisting{creer_graph.py}
+    \subsection{Exemples protéines}
+    \lstinputlisting[firstline=83]{extract_PDB.py}
+\end{frame}
+\begin{frame}[allowframebreaks,noframenumbering]
+    \section{Définition des classes}  
+    \subsection{Branches}
+    \lstinputlisting[firstline=1,lastline=124]{cas_simple_nuage.py}
+    \subsection{Graphes}
+    \lstinputlisting[firstline=1,lastline=37]{graphisomorphism.py}
+    \subsection{Protéines}
+    \lstinputlisting[firstline=1,lastline=87]{def_protein.py}    
+\end{frame}
+\begin{frame}[allowframebreaks,noframenumbering]   
+    \section{Isomorphisme et sous-isomorphisme}
+    \subsection{Isomorphsime sur les graphes}
+    \lstinputlisting[firstline=39]{graphisomorphism.py}
+    \subsection{Isomorphsime sur les protéines}
+    \lstinputlisting[firstline=88]{def_protein.py}
+    \subsection{Sous-isomorphisme sur les protéines}
+    \lstinputlisting[firstline=14,lastline=68]{subisom_prot.py}
+    \subsection{Informations et temps d'exécution}
+    \lstinputlisting{isom_prot.py}
+    \lstinputlisting[firstline=68,lastline=73]{subisom_prot.py}
+\end{frame}
+\begin{frame}[allowframebreaks,noframenumbering]
+    \section{Fonctions auxiliaires}
+    \lstinputlisting{geometrie_et_aux.py}
+\end{frame}
+\begin{frame}[allowframebreaks,noframenumbering]
+    \section{Calcul des coefficients}
+    \lstinputlisting[firstline=126,lastline=154]{cas_simple_nuage.py}
+    \lstinputlisting[firstline=91]{subisom_prot.py}
+\end{frame}
+\begin{frame}[allowframebreaks,noframenumbering]
+    \section{Affichage}
+    \subsection{Graphique complexité}
+    \lstinputlisting{plot_graph_complexite_isom_brutes.py}
+    \subsection{Affichage branches}
+    \lstinputlisting{plot_distlines.py}
+    \subsection{Affichage protéines}
+    \lstinputlisting{plot_protein.py}
+    \subsection{Affichage comparaison protéines}
+    \lstinputlisting{plot_sub.py}
+\end{frame}
+
+\end{document}
+
+

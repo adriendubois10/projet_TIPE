@@ -1,0 +1,62 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+
+\input{imports.tex}
+
+\usetheme{Marburg}
+\title{Application de méthodes de recherche d'isomorphismes de graphes à la comparaison des structures de protéines}
+\author{Adrien Dubois - N°candidat : 51771}
+\date{\today}
+
+\begin{document}
+\part{Présentation}
+\maketitle
+
+\begin{frame}{Plan}
+\tableofcontents
+\end{frame}
+
+\input{intro.tex}
+
+\input{branches.tex}
+
+\begin{frame}{Des branches à la protéine complète}
+    \normalsize
+    \begin{figure}[!htb]
+        \centering
+        \includegraphics[width=10cm]{branche_to_prot}
+    \end{figure}
+\end{frame}
+
+\input{isom.tex}
+
+\input{mckay.tex}
+
+\input{subisom.tex}
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+    \underline{Bilan} :
+    \begin{itemize}
+        \item tri des atomes très classant
+        \item test d'isomorphisme efficace sur les protéines
+        \item méthode recherche du plus grand sous-graphe isomorphe fonctionnelle 
+        \item mise en place d'un coefficient de comparaison
+    \end{itemize}
+    \underline{Limites} : 
+    \begin{itemize}
+        \item lecture partielle du format pdb
+        \item coefficients déterminés de manière empirique
+        \newline $\quad \rightarrow \quad$sur une base d'exemples, ajuster les valeurs
+        \item recherche demande beaucoup de ressources (NP-complet)
+    \end{itemize}
+\end{frame}
+
+\section{Annexe}
+
+\input{annexe.tex}
+
+\end{document}
+
+

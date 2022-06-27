@@ -1,0 +1,19 @@
+\frametitle{Idée 1 : Recherche par force brute}
+\footnotesize
+On cherche pour $\sigma \in \Sigma_n$, une permutation $\sigma$ telle que $G=H^\sigma$,
+
+En python :
+
+\begin{itemize}
+    \item type : \textcolor{charcoal}{Graph}
+        \newline\underline{ex} : $G_1 = Graph(\ [0,1,2],\ [[0,1], [0], [0]]\ )$
+        \newline $\quad H_1 = Graph(\ [0,1,2],\ [[1,0], [2], [2]] )$
+    \item type : permutation : int list
+        \newline \underline{ex} : sur $\Sigma_3,\ Id = [0,1,2],\ \sigma_1=[2,1,0]$ la transpositon de 1 et 3
+    \item fonction : \textcolor{airforceblue}{test$\_$isomorphism} : Graph, Graph, int list $\longrightarrow$ bool
+        \newline \underline{ex} : $test\_isomorphism( G_1, H_1 , [0,1,2])$
+        \newline teste si G et $H^{\sigma}$ sont les mêmes graphes
+    \item fonction : \textcolor{airforceblue}{isomorphes} : Graph, Graph $\longrightarrow$ bool
+        \newline \underline{ex} : $isomorphes(G, H) = True$
+        \newline $G_1$ et $H_1$ sont isomorphes car $\exists \sigma \in \Sigma_3,\ (\sigma=\sigma_1)\ G_1=H_1^{\sigma}$
+\end{itemize}

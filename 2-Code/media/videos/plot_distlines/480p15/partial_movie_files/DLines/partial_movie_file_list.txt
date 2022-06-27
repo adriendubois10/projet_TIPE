@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Adrien Dubois/Desktop/TIPE/Cas_simple/media/videos/plot_distlines/480p15/partial_movie_files/DLines/3739405938_26240085_3363222517.mp4'

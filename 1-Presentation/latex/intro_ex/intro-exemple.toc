@@ -1,0 +1,6 @@
+\selectlanguage *{french}
+\contentsline {part}{I\hspace {1em}Une partie}{1}{part.1}%
+\contentsline {section}{\numberline {1}Une section}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Une sous-section}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Une autre sous-section}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Une autre section}{1}{section.2}%

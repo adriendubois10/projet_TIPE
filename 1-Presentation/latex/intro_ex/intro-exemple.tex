@@ -1,0 +1,77 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8
+% !TeX spellcheck = fr_FR
+
+\documentclass[a4paper, french, twoside]{article}
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={Common, TeX}}
+\usepackage[pdfusetitle, colorlinks=true]{hyperref}
+\usepackage{mathtools, amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{enumitem}
+\setlist{noitemsep}
+	
+\title{Docs exemple}
+\author{Adrien Dubois - N° Candidat : 51771}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\part{Une partie}
+Ici commence une partie\dots{} avec une liste à puces numérotée où un item fait référence à un autre :
+	\begin{enumerate}
+	\item\label{it:point} premier élément
+	\end{enumerate}
+
+\section{Une section}
+Traçons la courbe $y=x^2$ pour $x$ variant entre 0 et 2.\footnote{Ceci est une note de bas de page.}
+
+\subsection{Une sous-section}
+
+\subsection{Une autre sous-section}\label{sec:unereference}
+Un groupe d'équations avec \texttt{align} et référence. Le résultat est l'équation~\eqref{eq:prés}
+	\begin{align}
+	\langle\mathcal{P}\rangle
+	&=\iint_S\langle\vec{\Pi}\rangle.d\vec{S}\\
+	&=\frac{\omega^4p_0^2}{12\pi\varepsilon_0c^3}\label{eq:prés}
+	\end{align}
+
+Un résultat avec encadré :
+	\begin{align}
+	\vec{r}=x\,\vec{u}_x+y\,\vec{u}_y
+	\quad\Rightarrow\quad
+	\boxed{
+	R=\lVert\vec{r}\rVert=\sqrt{x^2+y^2}
+	}
+	\quad\text{car $R\in\mathbb{R}^+=[0,+\infty[$}
+	\end{align}
+
+
+\section{Une autre section}
+Voir paragraphe \ref{sec:unereference}. La relation~\eqref{eq:matrice} contient une matrice :
+    \begin{align}
+    A =
+    \begin{pmatrix}
+    1 & a \\
+    4 & -6
+    \end{pmatrix}
+    \quad\text{avec $a\geqslant 0$}\label{eq:matrice}
+    \end{align}
+et un tableau :
+    \begin{center}
+    \begin{tabular}{l|c|c}
+    Colonne 1  & Colonne 2 & Colonne 3 \\
+    \hline
+    Intitulé 1 & \textcolor{red}{1} & \textcolor{blue}{2} \\
+    Intitulé 2 & \textcolor{green}{3} & 4
+    \end{tabular}
+    \end{center}
+
+\end{document}
